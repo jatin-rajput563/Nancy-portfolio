@@ -5,7 +5,6 @@ const Work = () => {
     <>
       <div className=" bg-[#F0F1F3] pt-[400px] pb-[120px]">
         <div className="max-w-[1320px] mx-auto px-4">
-         
           <div className="flex flex-row flex-wrap -mx-3">
             <div className="w-1/2">
               <div className="mt-[180px]">
