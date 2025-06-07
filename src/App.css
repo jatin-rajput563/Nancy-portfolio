@@ -8,23 +8,3 @@
 .ff-poppins {
     font-family: "Poppins", sans-serif;
 }
-
-.swiper-pagination-bullet {
-    background: #ccc;
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    background: #000;
-}
-
-@layer components {
-    .swiper-pagination-bullet {
-        background-color: #9ca3af; /* Tailwind's bg-gray-400 */
-        opacity: 1;
-    }
-
-    .swiper-pagination-bullet-active {
-        background-color: #000; /* Tailwind's bg-black */
-    }
-}
