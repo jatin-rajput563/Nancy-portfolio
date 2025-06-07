@@ -1,4 +1,5 @@
 import "./App.css";
+import Blog from "./components/Blog";
 import Hero from "./components/Hero";
 import Idea from "./components/Idea";
 import Portfoli from "./components/Portfoli";
@@ -11,6 +12,7 @@ function App() {
       <Work />
       <Portfoli />
       <Idea />
+      <Blog />
     </>
   );
 }
