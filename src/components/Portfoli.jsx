@@ -7,7 +7,7 @@ import zebria from "../assets/images/png/zebria.png";
 const Portfoli = () => {
   return (
     <>
-      <div className="min-h-screen py-[120px]">
+      <div className="py-[120px]">
         <div className="max-w-[1320px] mx-auto px-4">
           <div>
             <p className="m-0 text-[48px] font-semibold leading-[56px] text-center">
