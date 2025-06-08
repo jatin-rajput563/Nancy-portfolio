@@ -6,7 +6,6 @@ const Work = () => {
       <div className="bg-[#F0F1F3] pt-16 md:pt-32 lg:pt-[400px] pb-16 md:pb-24 lg:pb-[120px]">
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-3 gap-8 lg:gap-0">
-            {/* Left Content Section */}
             <div className="w-full lg:w-1/2 lg:px-3">
               <div className="lg:mt-[180px]">
                 <h2 className="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] leading-tight lg:leading-[56px] text-[#132238]">
@@ -23,13 +22,9 @@ const Work = () => {
                 </p>
               </div>
             </div>
-
-            {/* Right Cards Section */}
             <div className="w-full lg:w-1/2 lg:px-3">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
-                {/* First Column */}
                 <div className="flex flex-col gap-4 md:gap-6">
-                  {/* Research Card */}
                   <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
                     <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
@@ -54,8 +49,6 @@ const Work = () => {
                       a strong foundation for design.
                     </p>
                   </div>
-
-                  {/* Design Card */}
                   <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
                     <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
@@ -81,10 +74,7 @@ const Work = () => {
                     </p>
                   </div>
                 </div>
-
-                {/* Second Column */}
                 <div className="flex flex-col gap-4 md:gap-6 sm:mt-6 lg:mt-6">
-                  {/* Analyze Card */}
                   <div className="bg-white lg:h-[284px] cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
                     <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
@@ -109,8 +99,6 @@ const Work = () => {
                       decisions.
                     </p>
                   </div>
-
-                  {/* Launch Card */}
                   <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
                     <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
