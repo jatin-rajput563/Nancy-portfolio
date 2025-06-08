@@ -1,66 +1,74 @@
 import React from "react";
+
+import google from "../assets/images/svg/google.svg";
+import dribble from "../assets/images/svg/dribbble.svg";
+import linkdin from "../assets/images/svg/linkdin.svg";
+import amazon from "../assets/images/svg/amazon.svg";
+import medium from "../assets/images/svg/medium.svg";
+import spotify from "../assets/images/svg/spotify.svg";
 import Marquee from "react-fast-marquee";
 
-// Mock client logos data
 const clients = [
-  { name: "Google", alt: "Google" },
-  { name: "Dribbble", alt: "Dribbble" },
-  { name: "LinkedIn", alt: "LinkedIn" },
-  { name: "Amazon", alt: "Amazon" },
-  { name: "Medium", alt: "Medium" },
-  { name: "Spotify", alt: "Spotify" },
+  { src: google, alt: "Google" },
+  { src: dribble, alt: "Dribbble" },
+  { src: linkdin, alt: "LinkedIn" },
+  { src: amazon, alt: "Amazon" },
+  { src: medium, alt: "Medium" },
+  { src: spotify, alt: "Spotify" },
 ];
 
 const Clients = () => {
   return (
     <div className="bg-white">
-      <div className="py-8 sm:py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-[120px]">
+      <div className="py-6 sm:py-8 md:py-12 lg:py-16 xl:py-20 2xl:py-[120px]  lg:mb-[-200px]">
         <div className="max-w-[1320px] mx-auto px-3 sm:px-4 md:px-6 lg:px-8 text-center">
-          <h2 className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-[48px] leading-tight m-0">
+          <h2 className="font-semibold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-[48px] leading-tight m-0">
             Happy Clients
           </h2>
-          <p className="text-sm sm:text-base md:text-lg xl:text-[18px] leading-relaxed text-gray-500 mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[486px] pt-3 sm:pt-4 md:pt-5 lg:pt-6">
+          <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[18px] leading-relaxed text-gray-500 mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-[486px] pt-2 sm:pt-3 md:pt-4 lg:pt-5 xl:pt-6">
             Trusted by clients who value quality, creativity, and timely
             delivery.
           </p>
           <Marquee
             speed={30}
             gradient={false}
-            className="mt-6 sm:mt-8 md:mt-10 lg:mt-12 flex items-center"
+            className="mt-4 sm:mt-6 md:mt-8 lg:mt-10 xl:mt-12 flex items-center"
           >
             {clients.concat(clients).map((client, index) => (
               <div
                 key={index}
-                className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-32 lg:h-32 xl:w-40 xl:h-40 2xl:w-[160px] 2xl:h-[160px] flex items-center justify-center mx-2 sm:mx-3 md:mx-4 lg:mx-6 bg-gray-100 rounded-lg opacity-60 hover:opacity-100 transition-opacity duration-300"
+                className="w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 lg:w-28 lg:h-28 xl:w-36 xl:h-36 2xl:w-[160px] 2xl:h-[160px] flex items-center justify-center mx-1 sm:mx-2 md:mx-3 lg:mx-4 xl:mx-6"
               >
-                <span className="text-xs sm:text-sm md:text-base font-medium text-gray-500">
-                  {client.name}
-                </span>
+                <img
+                  src={client.src}
+                  alt={`${client.alt} logo`}
+                  className="max-w-full max-h-full object-contain filter grayscale opacity-50 hover:grayscale-0 hover:opacity-100 transition duration-300"
+                />
               </div>
             ))}
           </Marquee>
         </div>
       </div>
-      <div className="px-3 sm:px-4 md:px-6 lg:px-8 pb-8 sm:pb-12 md:pb-16 lg:pb-20">
+      <div className="px-3 sm:px-4 md:px-6 lg:px-8 pb-6 sm:pb-8 md:pb-12 lg:pb-16 xl:pb-20 transform lg:translate-y-[140px]">
         <div className="max-w-[1320px] mx-auto">
-          <div className="shadow-2xl bg-white p-4 sm:p-6 md:p-12 lg:p-16 xl:p-[88px] rounded-lg">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16">
-              <div className="space-y-6 lg:space-y-8">
+          <div className="shadow-xl sm:shadow-2xl bg-white p-3 sm:p-4 md:p-8 lg:p-12 xl:p-16 2xl:p-[88px] rounded-lg">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16">
+              <div className="space-y-4 sm:space-y-6 lg:space-y-8">
                 <div>
-                  <h2 className="font-semibold text-2xl sm:text-3xl md:text-[38px] leading-tight md:leading-[50px] m-0 text-left">
+                  <h2 className="font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[32px] xl:text-[36px] 2xl:text-[38px] leading-tight md:leading-[44px] xl:leading-[48px] 2xl:leading-[50px] m-0 text-left">
                     Contact Me
                   </h2>
-                  <p className="m-0 text-base sm:text-lg md:text-[18px] leading-6 md:leading-[24px] text-[#87909D] text-left mt-2">
+                  <p className="m-0 text-sm sm:text-base md:text-lg xl:text-[18px] leading-5 sm:leading-6 md:leading-[24px] text-[#87909D] text-left mt-1 sm:mt-2">
                     Get in touch to discuss your project or ask any questions.
                   </p>
                 </div>
-                <div className="space-y-3 md:space-y-[12px]">
-                  <div className="bg-white gap-3 md:gap-[13px] flex cursor-pointer p-4 sm:p-5 md:p-6 rounded-[10px] hover:shadow-2xl group hover:bg-white transition-all duration-300 w-full">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-[48px] md:h-[48px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 group-hover:bg-[#A53DFF] flex-shrink-0">
+                <div className="space-y-2 sm:space-y-3 md:space-y-[12px]">
+                  <div className="bg-white gap-2 sm:gap-3 md:gap-[13px] flex cursor-pointer p-3 sm:p-4 md:p-5 lg:p-6 rounded-[8px] sm:rounded-[10px] hover:shadow-lg sm:hover:shadow-xl md:hover:shadow-2xl group hover:bg-white transition-all duration-300 w-full">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-[48px] lg:h-[48px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 group-hover:bg-[#A53DFF] flex-shrink-0">
                       <svg
-                        width="20"
-                        height="20"
-                        className="sm:w-6 sm:h-6"
+                        width="16"
+                        height="16"
+                        className="sm:w-5 sm:h-5 md:w-6 md:h-6"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -86,20 +94,20 @@ const Clients = () => {
                       </svg>
                     </div>
                     <div className="min-w-0">
-                      <p className="text-xs sm:text-sm text-left leading-[24px] text-[#424E60]">
+                      <p className="text-xs sm:text-sm text-left leading-5 sm:leading-[24px] text-[#424E60]">
                         Address:
                       </p>
-                      <h3 className="font-semibold text-left text-sm sm:text-base leading-[24px] text-[#132238] mt-1">
+                      <h3 className="font-semibold text-left text-sm sm:text-base leading-5 sm:leading-[24px] text-[#132238] mt-1">
                         Hisar, Haryana
                       </h3>
                     </div>
                   </div>
-                  <div className="bg-white gap-3 md:gap-[13px] flex cursor-pointer p-4 sm:p-5 md:p-6 rounded-[10px] hover:shadow-2xl group hover:bg-white transition-all duration-300 w-full">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-[48px] md:h-[48px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 group-hover:bg-[#A53DFF] flex-shrink-0">
+                  <div className="bg-white gap-2 sm:gap-3 md:gap-[13px] flex cursor-pointer p-3 sm:p-4 md:p-5 lg:p-6 rounded-[8px] sm:rounded-[10px] hover:shadow-lg sm:hover:shadow-xl md:hover:shadow-2xl group hover:bg-white transition-all duration-300 w-full">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-[48px] lg:h-[48px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 group-hover:bg-[#A53DFF] flex-shrink-0">
                       <svg
-                        width="20"
-                        height="20"
-                        className="sm:w-6 sm:h-6"
+                        width="16"
+                        height="16"
+                        className="sm:w-5 sm:h-5 md:w-6 md:h-6"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -127,23 +135,23 @@ const Clients = () => {
                       </svg>
                     </div>
                     <div className="min-w-0">
-                      <p className="text-xs sm:text-sm text-left leading-[24px] text-[#424E60]">
+                      <p className="text-xs sm:text-sm text-left leading-5 sm:leading-[24px] text-[#424E60]">
                         My Email:
                       </p>
                       <a
                         href="mailto:2002nancymor@gmail.com"
-                        className="font-semibold text-left text-sm sm:text-base leading-[24px] text-[#132238] mt-1 hover:text-[#A53DFF] transition-colors break-all"
+                        className="font-semibold text-left text-sm sm:text-base leading-5 sm:leading-[24px] text-[#132238] mt-1 hover:text-[#A53DFF] transition-colors break-all"
                       >
                         2002nancymor@gmail.com
                       </a>
                     </div>
                   </div>
-                  <div className="bg-white gap-3 md:gap-[13px] flex cursor-pointer p-4 sm:p-5 md:p-6 rounded-[10px] hover:shadow-2xl group hover:bg-white transition-all duration-300 w-full">
-                    <div className="w-10 h-10 sm:w-12 sm:h-12 md:w-[48px] md:h-[48px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 group-hover:bg-[#A53DFF] flex-shrink-0">
+                  <div className="bg-white gap-2 sm:gap-3 md:gap-[13px] flex cursor-pointer p-3 sm:p-4 md:p-5 lg:p-6 rounded-[8px] sm:rounded-[10px] hover:shadow-lg sm:hover:shadow-xl md:hover:shadow-2xl group hover:bg-white transition-all duration-300 w-full">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 lg:w-[48px] lg:h-[48px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 group-hover:bg-[#A53DFF] flex-shrink-0">
                       <svg
-                        width="20"
-                        height="20"
-                        className="sm:w-6 sm:h-6"
+                        width="16"
+                        height="16"
+                        className="sm:w-5 sm:h-5 md:w-6 md:h-6"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -159,29 +167,29 @@ const Clients = () => {
                       </svg>
                     </div>
                     <div className="min-w-0">
-                      <p className="text-xs sm:text-sm text-left leading-[24px] text-[#424E60]">
+                      <p className="text-xs sm:text-sm text-left leading-5 sm:leading-[24px] text-[#424E60]">
                         Call Me Now:
                       </p>
                       <a
                         href="tel:+917206502701"
-                        className="font-semibold text-left text-sm sm:text-base leading-[24px] text-[#132238] mt-1 hover:text-[#A53DFF] transition-colors"
+                        className="font-semibold text-left text-sm sm:text-base leading-5 sm:leading-[24px] text-[#132238] mt-1 hover:text-[#A53DFF] transition-colors"
                       >
                         +91 7206502701
                       </a>
                     </div>
                   </div>
                 </div>
-                <div className="flex gap-2 sm:gap-3 mt-6 lg:mt-[35px]">
+                <div className="flex flex-wrap gap-1 sm:gap-2 md:gap-3 mt-4 sm:mt-6 lg:mt-[35px]">
                   <a
-                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white hover:bg-[#A53DFF] border border-gray-200 flex items-center justify-center rounded-[4px] group transition-colors duration-300"
+                    className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-white hover:bg-[#A53DFF] border border-gray-200 flex items-center justify-center rounded-[4px] group transition-colors duration-300"
                     href="https://www.instagram.com/n_mor39?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <svg
-                      width="14"
-                      height="14"
-                      className="sm:w-[18px] sm:h-[18px]"
+                      width="12"
+                      height="12"
+                      className="sm:w-3 sm:h-3 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]"
                       viewBox="0 0 18 18"
                       xmlns="http://www.w3.org/2000/svg"
                     >
@@ -192,15 +200,15 @@ const Clients = () => {
                     </svg>
                   </a>
                   <a
-                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white hover:bg-[#A53DFF] border border-gray-200 flex items-center justify-center rounded-[4px] group transition-colors duration-300"
+                    className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-white hover:bg-[#A53DFF] border border-gray-200 flex items-center justify-center rounded-[4px] group transition-colors duration-300"
                     href="https://www.linkedin.com/in/mornancy12345678/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <svg
-                      width="14"
-                      height="14"
-                      className="sm:w-[18px] sm:h-[18px]"
+                      width="12"
+                      height="12"
+                      className="sm:w-3 sm:h-3 md:w-4 md:h-4 lg:w-[18px] lg:h-[18px]"
                       viewBox="0 0 18 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -219,14 +227,15 @@ const Clients = () => {
                     </svg>
                   </a>
                   <a
-                    className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 bg-white hover:bg-[#A53DFF] border border-gray-200 flex items-center justify-center rounded-[4px] group transition-colors duration-300"
+                    className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 bg-white hover:bg-[#A53DFF] border border-gray-200 flex items-center justify-center rounded-[4px] group transition-colors duration-300"
                     href="https://www.behance.net/onboarding"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <svg
-                      width="18"
-                      height="18"
+                      width="14"
+                      height="14"
+                      className="sm:w-4 sm:h-4 md:w-5 md:h-5 lg:w-[18px] lg:h-[18px]"
                       viewBox="0 0 18 18"
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
@@ -239,23 +248,23 @@ const Clients = () => {
                   </a>
                 </div>
               </div>
-              <div className="space-y-4 sm:space-y-6">
-                <p className="text-sm sm:text-base md:text-[18px] leading-6 md:leading-[24px] text-[#87909D] text-left m-0 max-w-[560px]">
+              <div className="space-y-3 sm:space-y-4 md:space-y-6">
+                <p className="text-xs sm:text-sm md:text-base lg:text-lg xl:text-[18px] leading-5 sm:leading-6 md:leading-[24px] text-[#87909D] text-left m-0 max-w-[560px]">
                   Reach out anytime to start a project or ask questions—I'm here
                   to help!
                 </p>
-                <form className="space-y-6 md:space-y-8 mt-8 md:mt-[50px]">
+                <form className="space-y-4 sm:space-y-6 md:space-y-8 mt-6 sm:mt-8 md:mt-[50px]">
                   <div className="relative w-full">
                     <input
                       type="text"
                       id="name"
                       required
-                      className="peer w-full border-0 border-b-2 pt-4 pb-2 border-[#697484] text-black placeholder-transparent focus:outline-none focus:border-[#a259ff] bg-transparent"
+                      className="peer w-full border-0 border-b-2 pt-3 sm:pt-4 pb-1 sm:pb-2 border-[#697484] text-black placeholder-transparent focus:outline-none focus:border-[#a259ff] bg-transparent text-sm sm:text-base"
                       placeholder="Name"
                     />
                     <label
                       htmlFor="name"
-                      className="absolute left-0 -top-3.5 text-[#697484] text-sm sm:text-base md:text-[18px] transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-[#697484] peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-sm"
+                      className="absolute left-0 -top-2 sm:-top-3.5 text-[#697484] text-xs sm:text-sm md:text-base lg:text-[18px] transition-all peer-placeholder-shown:text-sm sm:peer-placeholder-shown:text-base peer-placeholder-shown:text-[#697484] peer-placeholder-shown:top-1 sm:peer-placeholder-shown:top-2 peer-focus:-top-2 sm:peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-xs sm:peer-focus:text-sm"
                     >
                       Name*
                     </label>
@@ -265,12 +274,12 @@ const Clients = () => {
                       type="email"
                       id="email"
                       required
-                      className="peer w-full border-0 border-b-2 pt-4 pb-2 border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff]"
+                      className="peer w-full border-0 border-b-2 pt-3 sm:pt-4 pb-1 sm:pb-2 border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff] text-sm sm:text-base"
                       placeholder="Email"
                     />
                     <label
                       htmlFor="email"
-                      className="absolute left-0 -top-3.5 text-[#697484] text-sm sm:text-base md:text-[18px] transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-sm"
+                      className="absolute left-0 -top-2 sm:-top-3.5 text-[#697484] text-xs sm:text-sm md:text-base lg:text-[18px] transition-all peer-placeholder-shown:text-sm sm:peer-placeholder-shown:text-base peer-placeholder-shown:top-1 sm:peer-placeholder-shown:top-2 peer-focus:-top-2 sm:peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-xs sm:peer-focus:text-sm"
                     >
                       Email*
                     </label>
@@ -280,28 +289,28 @@ const Clients = () => {
                       type="text"
                       id="location"
                       required
-                      className="peer w-full border-0 border-b-2 pt-4 pb-2 border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff]"
+                      className="peer w-full border-0 border-b-2 pt-3 sm:pt-4 pb-1 sm:pb-2 border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff] text-sm sm:text-base"
                       placeholder="Location"
                     />
                     <label
                       htmlFor="location"
-                      className="absolute left-0 -top-3.5 text-[#697484] text-sm sm:text-base md:text-[18px] transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-sm"
+                      className="absolute left-0 -top-2 sm:-top-3.5 text-[#697484] text-xs sm:text-sm md:text-base lg:text-[18px] transition-all peer-placeholder-shown:text-sm sm:peer-placeholder-shown:text-base peer-placeholder-shown:top-1 sm:peer-placeholder-shown:top-2 peer-focus:-top-2 sm:peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-xs sm:peer-focus:text-sm"
                     >
                       Location*
                     </label>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-[24px]">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 md:gap-[24px]">
                     <div className="relative">
                       <input
                         type="number"
                         id="budget"
                         required
-                        className="peer w-full border-0 border-b-2 pt-4 pb-2 border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff]"
+                        className="peer w-full border-0 border-b-2 pt-3 sm:pt-4 pb-1 sm:pb-2 border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff] text-sm sm:text-base"
                         placeholder="Budget"
                       />
                       <label
                         htmlFor="budget"
-                        className="absolute left-0 -top-3.5 text-[#697484] text-sm sm:text-base md:text-[18px] transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-sm"
+                        className="absolute left-0 -top-2 sm:-top-3.5 text-[#697484] text-xs sm:text-sm md:text-base lg:text-[18px] transition-all peer-placeholder-shown:text-sm sm:peer-placeholder-shown:text-base peer-placeholder-shown:top-1 sm:peer-placeholder-shown:top-2 peer-focus:-top-2 sm:peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-xs sm:peer-focus:text-sm"
                       >
                         Budget*
                       </label>
@@ -311,12 +320,12 @@ const Clients = () => {
                         type="text"
                         id="subject"
                         required
-                        className="peer w-full border-0 border-b-2 pt-4 pb-2 border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff]"
+                        className="peer w-full border-0 border-b-2 pt-3 sm:pt-4 pb-1 sm:pb-2 border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff] text-sm sm:text-base"
                         placeholder="Subject"
                       />
                       <label
                         htmlFor="subject"
-                        className="absolute left-0 -top-3.5 text-[#697484] text-sm sm:text-base md:text-[18px] transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-sm"
+                        className="absolute left-0 -top-2 sm:-top-3.5 text-[#697484] text-xs sm:text-sm md:text-base lg:text-[18px] transition-all peer-placeholder-shown:text-sm sm:peer-placeholder-shown:text-base peer-placeholder-shown:top-1 sm:peer-placeholder-shown:top-2 peer-focus:-top-2 sm:peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-xs sm:peer-focus:text-sm"
                       >
                         Subject*
                       </label>
@@ -327,25 +336,25 @@ const Clients = () => {
                       id="message"
                       required
                       rows={1}
-                      className="peer w-full border-0 border-b-2 pt-4 pb-2 resize-none border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff]"
+                      className="peer w-full border-0 border-b-2 pt-3 sm:pt-4 pb-1 sm:pb-2 resize-none border-[#697484] text-[#1E1E1E] placeholder-transparent bg-transparent focus:outline-none focus:border-[#a259ff] text-sm sm:text-base"
                       placeholder="Message"
                     />
                     <label
                       htmlFor="message"
-                      className="absolute left-0 -top-3.5 text-[#697484] text-sm sm:text-base md:text-[18px] transition-all peer-placeholder-shown:text-base peer-placeholder-shown:top-4 peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-sm"
+                      className="absolute left-0 -top-2 sm:-top-3.5 text-[#697484] text-xs sm:text-sm md:text-base lg:text-[18px] transition-all peer-placeholder-shown:text-sm sm:peer-placeholder-shown:text-base peer-placeholder-shown:top-3 sm:peer-placeholder-shown:top-4 peer-focus:-top-2 sm:peer-focus:-top-3.5 peer-focus:text-[#a259ff] peer-focus:text-xs sm:peer-focus:text-sm"
                     >
                       Message*
                     </label>
                   </div>
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-3 md:gap-[18px] px-4 md:px-6 py-2 md:py-3 text-sm md:text-base leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF] hover:text-white mt-8 md:mt-[50px]"
+                    className="inline-flex items-center gap-2 sm:gap-3 md:gap-[18px] px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 text-xs sm:text-sm md:text-base leading-5 sm:leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF] hover:text-white mt-6 sm:mt-8 md:mt-[50px]"
                   >
                     Submit
                     <svg
-                      width="16"
-                      height="16"
-                      className="md:w-5 md:h-5"
+                      width="12"
+                      height="12"
+                      className="sm:w-4 sm:h-4 md:w-5 md:h-5"
                       viewBox="0 0 20 20"
                       fill="currentColor"
                       xmlns="http://www.w3.org/2000/svg"

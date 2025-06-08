@@ -21,7 +21,7 @@ const Hero = () => {
         />
         <Navbar />
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 z-[1] relative">
-          <div className="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-3 mt-16 sm:mt-20 md:mt-24 lg:mt-[150px]">
+          <div className="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-3 mt-16 sm:mt-20 md:mt-24 lg:mt-[60px] lg:mb-[-400px]">
             <div className="w-full lg:w-1/2 lg:px-3 mb-6 lg:mb-0">
               <div className="mt-8 sm:mt-12 md:mt-16 lg:mt-[100px] text-center lg:text-left">
                 <h1 className="font-semibold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[72px] leading-tight sm:leading-tight md:leading-tight lg:leading-[84px] max-w-none lg:max-w-[376px] mx-auto lg:mx-0">
@@ -65,7 +65,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="mt-16 sm:mt-20 md:mt-32 lg:mt-48 xl:transform xl:translate-y-[300px]">
+          <div className="mt-16 sm:mt-20 md:mt-32 lg:mt-48 xl:transform min-[1022px]:translate-y-[300px]">
             <div className="shadow-lg sm:shadow-xl lg:shadow-2xl bg-white p-6 sm:p-8 md:p-12 lg:p-16 xl:p-[112px] rounded-[12px] sm:rounded-[16px]">
               <div className="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-3">
                 <div className="w-full lg:w-1/2 lg:px-3 mb-8 lg:mb-6">
