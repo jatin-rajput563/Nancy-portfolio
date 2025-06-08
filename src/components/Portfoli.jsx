@@ -4,50 +4,47 @@ import attorny from "../assets/images/png/attorny.png";
 import grocery from "../assets/images/png/grocry.png";
 import trends from "../assets/images/png/trends.png";
 import zebria from "../assets/images/png/zebria.png";
-const Portfoli = () => {
+
+const Portfolio = () => {
   return (
     <>
-      <div className="py-[120px]">
-        <div className="max-w-[1320px] mx-auto px-4">
+      <div className="py-16 md:py-24 lg:py-[120px]">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
           <div>
-            <p className="m-0 text-[48px] font-semibold leading-[56px] text-center">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[48px] font-semibold leading-tight lg:leading-[56px] text-center text-[#132238]">
               Portfolio
-            </p>
-            <p className="m-0 text-[18px] leading-[24px] text-[#87909D] max-w-[976px] text-center mx-auto mt-6">
+            </h2>
+            <p className="text-base sm:text-lg lg:text-[18px] leading-relaxed lg:leading-[24px] text-[#87909D] max-w-[976px] text-center mx-auto mt-4 md:mt-6">
               Here are some of my favorite projects that show how I design
               easy-to-use websites, apps, and dashboards. Each one highlights my
               focus on great user experience and clean design.
             </p>
           </div>
-          <div className="flex flex-row flex-wrap -mx-3 mt-[60px]">
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <div className="bg-white rounded-[8px] hover:shadow-2xl transition-all border border-[#E6E8EB] max-w-[424px] w-full">
-                <img src={sign} alt="sign-img" />
-                <div className="p-5">
-                  <p className="font-medium text-xs leading-[16px] text-[#87909D] m-0">
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mt-12 md:mt-16 lg:mt-[60px]">
+            {/* First Column - Mobile: 1 item, Tablet: 2 items, Desktop: 3 items */}
+            <div className="flex flex-col gap-6">
+              <div className="bg-white rounded-lg hover:shadow-2xl transition-all duration-300 border border-[#E6E8EB] w-full max-w-[424px] mx-auto lg:mx-0">
+                <img
+                  src={sign}
+                  alt="NeuroLink Homepage"
+                  className="w-full h-auto rounded-t-lg"
+                />
+                <div className="p-4 md:p-5">
+                  <p className="font-medium text-xs leading-4 text-[#87909D] m-0">
                     UI-UX DESIGN
                   </p>
-                  <p className="font-semibold text-[18px] leading-[24px] m-0 pt-[4px]">
+                  <h3 className="font-semibold text-lg leading-6 m-0 pt-1">
                     NeuroLink Homepage
-                  </p>
-                  <p className="text-[14px] m-0 leading-[20px] text-[#556070] tracking-[-1px] pt-[12px] pb-[24px]">
+                  </h3>
+                  <p className="text-sm m-0 leading-5 text-[#556070] tracking-[-0.5px] pt-3 pb-6">
                     Design a dark-mode website for NeuroLink with a neural
                     inspired logo, tech fonts, and glowing visuals.
                   </p>
-                  <a href="#" target="_blank">
-                    <div
-                      className="relative inline-flex items-center gap-[18px] px-6 py-3 text-base leading-[24px] 
-  text-[#A53DFF] border border-[#A53DFF] rounded-[4px] font-semibold 
-  shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out 
-  overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] 
-  bg-white hover:bg-[#A53DFF]"
-                    >
-                      <span
-                        className="absolute inset-0 w-full h-full bg-white opacity-0 
-    scale-x-0 origin-left transition-transform duration-500 ease-in-out 
-    group-hover:scale-x-100 group-hover:opacity-10 z-0"
-                      ></span>
-                      <span className="relative z-10 flex items-center gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div className="relative inline-flex items-center gap-4 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF]">
+                      <span className="absolute inset-0 w-full h-full bg-white opacity-0 scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100 group-hover:opacity-10 z-0"></span>
+                      <span className="relative z-10 flex items-center gap-3 md:gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
                         Case Study
                         <svg
                           width="12"
@@ -67,33 +64,28 @@ const Portfoli = () => {
                   </a>
                 </div>
               </div>
-              <div className="bg-white rounded-[8px] hover:shadow-2xl transition-all border border-[#E6E8EB] max-w-[424px] w-full mt-6">
-                <img src={attorny} alt="sign-img" />
-                <div className="p-5">
-                  <p className="font-medium text-xs leading-[16px] text-[#87909D] m-0">
+
+              <div className="bg-white rounded-lg hover:shadow-2xl transition-all duration-300 border border-[#E6E8EB] w-full max-w-[424px] mx-auto lg:mx-0">
+                <img
+                  src={attorny}
+                  alt="AttorneyAlert Email Template"
+                  className="w-full h-auto rounded-t-lg"
+                />
+                <div className="p-4 md:p-5">
+                  <p className="font-medium text-xs leading-4 text-[#87909D] m-0">
                     UI-UX DESIGN
                   </p>
-                  <p className="font-semibold text-[18px] leading-[24px] m-0 pt-[4px]">
+                  <h3 className="font-semibold text-lg leading-6 m-0 pt-1">
                     AttorneyAlert E-mail Template
-                  </p>
-                  <p className="text-[14px] m-0 leading-[20px] text-[#556070] tracking-[-1px] pt-[12px] pb-[24px]">
+                  </h3>
+                  <p className="text-sm m-0 leading-5 text-[#556070] tracking-[-0.5px] pt-3 pb-6">
                     A bold, responsive email template built for clear and
                     impactful communication.
                   </p>
-                  <a href="#" target="_blank">
-                    <div
-                      className="relative inline-flex items-center gap-[18px] px-6 py-3 text-base leading-[24px] 
-  text-[#A53DFF] border border-[#A53DFF] rounded-[4px] font-semibold 
-  shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out 
-  overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] 
-  bg-white hover:bg-[#A53DFF]"
-                    >
-                      <span
-                        className="absolute inset-0 w-full h-full bg-white opacity-0 
-    scale-x-0 origin-left transition-transform duration-500 ease-in-out 
-    group-hover:scale-x-100 group-hover:opacity-10 z-0"
-                      ></span>
-                      <span className="relative z-10 flex items-center gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div className="relative inline-flex items-center gap-4 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF]">
+                      <span className="absolute inset-0 w-full h-full bg-white opacity-0 scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100 group-hover:opacity-10 z-0"></span>
+                      <span className="relative z-10 flex items-center gap-3 md:gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
                         Case Study
                         <svg
                           width="12"
@@ -114,34 +106,30 @@ const Portfoli = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <div className="bg-white rounded-[8px] hover:shadow-2xl transition-all border border-[#E6E8EB] max-w-[424px] w-full">
-                <img src={sign} alt="sign-img" />
-                <div className="p-5">
-                  <p className="font-medium text-xs leading-[16px] text-[#87909D] m-0">
+
+            {/* Second Column */}
+            <div className="flex flex-col gap-6">
+              <div className="bg-white rounded-lg hover:shadow-2xl transition-all duration-300 border border-[#E6E8EB] w-full max-w-[424px] mx-auto lg:mx-0">
+                <img
+                  src={sign}
+                  alt="SignPath Homepage"
+                  className="w-full h-auto rounded-t-lg"
+                />
+                <div className="p-4 md:p-5">
+                  <p className="font-medium text-xs leading-4 text-[#87909D] m-0">
                     UI-UX DESIGN
                   </p>
-                  <p className="font-semibold text-[18px] leading-[24px] m-0 pt-[4px]">
+                  <h3 className="font-semibold text-lg leading-6 m-0 pt-1">
                     SignPath Homepage
-                  </p>
-                  <p className="text-[14px] m-0 leading-[20px] text-[#556070] tracking-[-1px] pt-[12px] pb-[24px]">
+                  </h3>
+                  <p className="text-sm m-0 leading-5 text-[#556070] tracking-[-0.5px] pt-3 pb-6">
                     SignPath provides a secure code signing platform that
                     ensures software authenticity and malware.
                   </p>
-                  <a href="#" target="_blank">
-                    <div
-                      className="relative inline-flex items-center gap-[18px] px-6 py-3 text-base leading-[24px] 
-  text-[#A53DFF] border border-[#A53DFF] rounded-[4px] font-semibold 
-  shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out 
-  overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] 
-  bg-white hover:bg-[#A53DFF]"
-                    >
-                      <span
-                        className="absolute inset-0 w-full h-full bg-white opacity-0 
-    scale-x-0 origin-left transition-transform duration-500 ease-in-out 
-    group-hover:scale-x-100 group-hover:opacity-10 z-0"
-                      ></span>
-                      <span className="relative z-10 flex items-center gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div className="relative inline-flex items-center gap-4 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF]">
+                      <span className="absolute inset-0 w-full h-full bg-white opacity-0 scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100 group-hover:opacity-10 z-0"></span>
+                      <span className="relative z-10 flex items-center gap-3 md:gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
                         Case Study
                         <svg
                           width="12"
@@ -161,33 +149,28 @@ const Portfoli = () => {
                   </a>
                 </div>
               </div>
-              <div className="bg-white rounded-[8px] hover:shadow-2xl transition-all border border-[#E6E8EB] max-w-[424px] w-full mt-6">
-                <img src={grocery} alt="sign-img" />
-                <div className="p-5">
-                  <p className="font-medium text-xs leading-[16px] text-[#87909D] m-0">
+
+              <div className="bg-white rounded-lg hover:shadow-2xl transition-all duration-300 border border-[#E6E8EB] w-full max-w-[424px] mx-auto lg:mx-0">
+                <img
+                  src={grocery}
+                  alt="GroceryEase Mobile App"
+                  className="w-full h-auto rounded-t-lg"
+                />
+                <div className="p-4 md:p-5">
+                  <p className="font-medium text-xs leading-4 text-[#87909D] m-0">
                     UI-UX DESIGN
                   </p>
-                  <p className="font-semibold text-[18px] leading-[24px] m-0 pt-[4px]">
+                  <h3 className="font-semibold text-lg leading-6 m-0 pt-1">
                     GroceryEase Mobile App
-                  </p>
-                  <p className="text-[14px] m-0 leading-[20px] text-[#556070] tracking-[-1px] pt-[12px] pb-[24px]">
+                  </h3>
+                  <p className="text-sm m-0 leading-5 text-[#556070] tracking-[-0.5px] pt-3 pb-6">
                     A user-friendly mobile app that simplifies grocery shopping
                     with smart lists and easy navigation.
                   </p>
-                  <a href="#" target="_blank">
-                    <div
-                      className="relative inline-flex items-center gap-[18px] px-6 py-3 text-base leading-[24px] 
-  text-[#A53DFF] border border-[#A53DFF] rounded-[4px] font-semibold 
-  shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out 
-  overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] 
-  bg-white hover:bg-[#A53DFF]"
-                    >
-                      <span
-                        className="absolute inset-0 w-full h-full bg-white opacity-0 
-    scale-x-0 origin-left transition-transform duration-500 ease-in-out 
-    group-hover:scale-x-100 group-hover:opacity-10 z-0"
-                      ></span>
-                      <span className="relative z-10 flex items-center gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div className="relative inline-flex items-center gap-4 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF]">
+                      <span className="absolute inset-0 w-full h-full bg-white opacity-0 scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100 group-hover:opacity-10 z-0"></span>
+                      <span className="relative z-10 flex items-center gap-3 md:gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
                         Case Study
                         <svg
                           width="12"
@@ -208,34 +191,30 @@ const Portfoli = () => {
                 </div>
               </div>
             </div>
-            <div className="w-full md:w-1/2 lg:w-1/3">
-              <div className="bg-white rounded-[8px] hover:shadow-2xl transition-all border border-[#E6E8EB] max-w-[424px] w-full">
-                <img src={trends} alt="sign-img" />
-                <div className="p-5">
-                  <p className="font-medium text-xs leading-[16px] text-[#87909D] m-0">
+
+            {/* Third Column */}
+            <div className="flex flex-col gap-6 md:col-span-2 lg:col-span-1">
+              <div className="bg-white rounded-lg hover:shadow-2xl transition-all duration-300 border border-[#E6E8EB] w-full max-w-[424px] mx-auto lg:mx-0">
+                <img
+                  src={trends}
+                  alt="Blog Writing UI/UX Trends"
+                  className="w-full h-auto rounded-t-lg"
+                />
+                <div className="p-4 md:p-5">
+                  <p className="font-medium text-xs leading-4 text-[#87909D] m-0">
                     UI-UX DESIGN
                   </p>
-                  <p className="font-semibold text-[18px] leading-[24px] m-0 pt-[4px]">
+                  <h3 className="font-semibold text-lg leading-6 m-0 pt-1">
                     Blog Writing UI/UX Trends in 2025
-                  </p>
-                  <p className="text-[14px] m-0 leading-[20px] text-[#556070] tracking-[-1px] pt-[12px] pb-[24px]">
+                  </h3>
+                  <p className="text-sm m-0 leading-5 text-[#556070] tracking-[-0.5px] pt-3 pb-6">
                     Discover the latest UI/UX trends shaping digital experiences
                     in 2025, from AI-driven design.
                   </p>
-                  <a href="#" target="_blank">
-                    <div
-                      className="relative inline-flex items-center gap-[18px] px-6 py-3 text-base leading-[24px] 
-  text-[#A53DFF] border border-[#A53DFF] rounded-[4px] font-semibold 
-  shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out 
-  overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] 
-  bg-white hover:bg-[#A53DFF]"
-                    >
-                      <span
-                        className="absolute inset-0 w-full h-full bg-white opacity-0 
-    scale-x-0 origin-left transition-transform duration-500 ease-in-out 
-    group-hover:scale-x-100 group-hover:opacity-10 z-0"
-                      ></span>
-                      <span className="relative z-10 flex items-center gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div className="relative inline-flex items-center gap-4 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF]">
+                      <span className="absolute inset-0 w-full h-full bg-white opacity-0 scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100 group-hover:opacity-10 z-0"></span>
+                      <span className="relative z-10 flex items-center gap-3 md:gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
                         Case Study
                         <svg
                           width="12"
@@ -255,32 +234,27 @@ const Portfoli = () => {
                   </a>
                 </div>
               </div>
-              <div className="bg-white rounded-[8px] hover:shadow-2xl transition-all border border-[#E6E8EB] max-w-[424px]  w-full mt-6">
-                <img src={zebria} alt="sign-img" />
-                <div className="p-5">
-                  <p className="font-medium text-xs leading-[16px] text-[#87909D] m-0">
+
+              <div className="bg-white rounded-lg hover:shadow-2xl transition-all duration-300 border border-[#E6E8EB] w-full max-w-[424px] mx-auto lg:mx-0">
+                <img
+                  src={zebria}
+                  alt="Zebira Dashboard"
+                  className="w-full lg:h-[237px] rounded-t-lg"
+                />
+                <div className="p-4 md:p-5">
+                  <p className="font-medium text-xs leading-4 text-[#87909D] m-0">
                     UI-UX DESIGN
                   </p>
-                  <p className="font-semibold text-[18px] leading-[24px] m-0 pt-[4px]">
+                  <h3 className="font-semibold text-lg leading-6 m-0 pt-1">
                     Zebira Dashboard
-                  </p>
-                  <p className="text-[14px] m-0 leading-[20px] text-[#556070] tracking-[-1px] pt-[12px] pb-[54px]">
+                  </h3>
+                  <p className="text-sm m-0 leading-5 text-[#556070] tracking-[-0.5px] pt-3 pb-12 md:pb-[18px]">
                     A modern dashboard for tracking data and insights with ease.
                   </p>
-                  <a href="#" target="_blank">
-                    <div
-                      className="relative inline-flex items-center gap-[18px] px-6 py-3 text-base leading-[24px] 
-  text-[#A53DFF] border border-[#A53DFF] rounded-[4px] font-semibold 
-  shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out 
-  overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] 
-  bg-white hover:bg-[#A53DFF]"
-                    >
-                      <span
-                        className="absolute inset-0 w-full h-full bg-white opacity-0 
-    scale-x-0 origin-left transition-transform duration-500 ease-in-out 
-    group-hover:scale-x-100 group-hover:opacity-10 z-0"
-                      ></span>
-                      <span className="relative z-10 flex items-center gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
+                  <a href="#" target="_blank" rel="noopener noreferrer">
+                    <div className="relative inline-flex items-center gap-4 px-4 md:px-6 py-2 md:py-3 text-sm md:text-base leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF]">
+                      <span className="absolute inset-0 w-full h-full bg-white opacity-0 scale-x-0 origin-left transition-transform duration-500 ease-in-out group-hover:scale-x-100 group-hover:opacity-10 z-0"></span>
+                      <span className="relative z-10 flex items-center gap-3 md:gap-[18px] text-[#A53DFF] group-hover:text-white transition-colors duration-300">
                         Case Study
                         <svg
                           width="12"
@@ -308,4 +282,4 @@ const Portfoli = () => {
   );
 };
 
-export default Portfoli;
+export default Portfolio;

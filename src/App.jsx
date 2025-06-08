@@ -1,5 +1,6 @@
 import "./App.css";
 import Blog from "./components/Blog";
+import Clients from "./components/Clients";
 import Hero from "./components/Hero";
 import Idea from "./components/Idea";
 import Portfoli from "./components/Portfoli";
@@ -15,6 +16,7 @@ function App() {
       <Idea />
       <Blog />
       <WhatDo />
+      <Clients />
     </>
   );
 }

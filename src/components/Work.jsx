@@ -3,37 +3,39 @@ import React from "react";
 const Work = () => {
   return (
     <>
-      <div className=" bg-[#F0F1F3] pt-[400px] pb-[120px]">
-        <div className="max-w-[1320px] mx-auto px-4">
-          <div className="flex flex-row flex-wrap -mx-3">
-            <div className="w-1/2">
-              <div className="mt-[180px]">
-                <p className="font-semibold text-[48px] leading-[56px]">
+      <div className="bg-[#F0F1F3] pt-16 md:pt-32 lg:pt-[400px] pb-16 md:pb-24 lg:pb-[120px]">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col lg:flex-row lg:flex-wrap lg:-mx-3 gap-8 lg:gap-0">
+            {/* Left Content Section */}
+            <div className="w-full lg:w-1/2 lg:px-3">
+              <div className="lg:mt-[180px]">
+                <h2 className="font-semibold text-2xl sm:text-3xl md:text-4xl lg:text-[48px] leading-tight lg:leading-[56px] text-[#132238]">
                   Work Process
-                </p>
-                <p className="text-normal text-[18px] leading-[24px] mt-6 text-[#697484] max-w-[529px]">
+                </h2>
+                <p className="text-base sm:text-lg lg:text-[18px] leading-relaxed lg:leading-[24px] mt-4 md:mt-6 text-[#697484] lg:max-w-[529px]">
                   My design process is user-focused and goal-driven. From
                   research and wireframes to high-fidelity designs and
                   prototypes, I follow a structured approach to create smooth
-                  and effective digital experiences. <br />
+                  and effective digital experiences.
+                  <br />
                   <br />I follow a thoughtful, step-by-step design process that
                   transforms ideas into user-friendly digital products.
                 </p>
               </div>
             </div>
-            <div className="w-1/2">
-              <div className="flex flex-wrap gap-6">
-                <div className="flex flex-col gap-6">
-                  <div className="bg-[#FFFFFF] cursor-pointer p-8 rounded-xl max-w-[312px] hover:shadow-lg group hover:bg-white transition-all duration-300">
-                    <a
-                      className="w-[72px] h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-[6px] transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+
+            {/* Right Cards Section */}
+            <div className="w-full lg:w-1/2 lg:px-3">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                {/* First Column */}
+                <div className="flex flex-col gap-4 md:gap-6">
+                  {/* Research Card */}
+                  <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
+                    <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
-                        width="32"
-                        height="32"
+                        width="28"
+                        height="28"
+                        className="md:w-8 md:h-8"
                         viewBox="0 0 32 32"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -43,25 +45,23 @@ const Work = () => {
                           className="fill-[#A53DFF] group-hover:fill-white transition-colors duration-300"
                         />
                       </svg>
-                    </a>
-                    <p className="m-0 font-semibold text-[20px] leading-[24px] text-[#132238]">
+                    </div>
+                    <h3 className="font-semibold text-lg md:text-[20px] leading-tight md:leading-[24px] text-[#132238] mb-3">
                       1. Research
-                    </p>
-                    <p className="m-0 text-base leading-[24px] text-[#556070] mt-3">
+                    </h3>
+                    <p className="text-sm md:text-base leading-relaxed md:leading-[24px] text-[#556070]">
                       I begin by understanding user needs, business goals to lay
                       a strong foundation for design.
                     </p>
                   </div>
-                  <div className="bg-[#FFFFFF] cursor-pointer p-8 rounded-xl max-w-[312px] hover:shadow-lg group hover:bg-white transition-all duration-300">
-                    <a
-                      className="w-[72px] h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-[6px] transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+
+                  {/* Design Card */}
+                  <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
+                    <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
-                        width="32"
-                        height="32"
+                        width="28"
+                        height="28"
+                        className="md:w-8 md:h-8"
                         viewBox="0 0 32 32"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -71,27 +71,26 @@ const Work = () => {
                           className="fill-[#A53DFF] group-hover:fill-white transition-colors duration-300"
                         />
                       </svg>
-                    </a>
-                    <p className="m-0 font-semibold text-[20px] leading-[24px] text-[#132238]">
+                    </div>
+                    <h3 className="font-semibold text-lg md:text-[20px] leading-tight md:leading-[24px] text-[#132238] mb-3">
                       2. Design
-                    </p>
-                    <p className="m-0 text-base leading-[24px] text-[#556070] mt-3">
-                      create user-friendly and visually appealing designs that
+                    </h3>
+                    <p className="text-sm md:text-base leading-relaxed md:leading-[24px] text-[#556070]">
+                      Create user-friendly and visually appealing designs that
                       solve real problems.
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col gap-6 mt-6">
-                  <div className="bg-[#FFFFFF] cursor-pointer p-8 rounded-xl max-w-[312px] hover:shadow-lg group hover:bg-white transition-all duration-300">
-                    <a
-                      className="w-[72px] h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-[6px] transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+
+                {/* Second Column */}
+                <div className="flex flex-col gap-4 md:gap-6 sm:mt-6 lg:mt-6">
+                  {/* Analyze Card */}
+                  <div className="bg-white lg:h-[284px] cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
+                    <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
-                        width="32"
-                        height="32"
+                        width="28"
+                        height="28"
+                        className="md:w-8 md:h-8"
                         viewBox="0 0 32 32"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -101,25 +100,23 @@ const Work = () => {
                           className="fill-[#A53DFF] group-hover:fill-white transition-colors duration-300"
                         />
                       </svg>
-                    </a>
-                    <p className="m-0 font-semibold text-[20px] leading-[24px] text-[#132238]">
+                    </div>
+                    <h3 className="font-semibold text-lg md:text-[20px] leading-tight md:leading-[24px] text-[#132238] mb-3">
                       3. Analyze
-                    </p>
-                    <p className="m-0 text-base leading-[24px] text-[#556070] mt-3">
+                    </h3>
+                    <p className="text-sm md:text-base leading-relaxed md:leading-[24px] text-[#556070]">
                       I study the data to find useful insights for better design
                       decisions.
                     </p>
                   </div>
-                  <div className="bg-[#FFFFFF] cursor-pointer p-8 rounded-xl max-w-[312px] hover:shadow-lg group hover:bg-white transition-all duration-300">
-                    <a
-                      className="w-[72px] h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-[6px] transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]"
-                      href="#"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
+
+                  {/* Launch Card */}
+                  <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
+                    <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
-                        width="32"
-                        height="32"
+                        width="28"
+                        height="28"
+                        className="md:w-8 md:h-8"
                         viewBox="0 0 32 32"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -129,11 +126,11 @@ const Work = () => {
                           className="fill-[#A53DFF] group-hover:fill-white transition-colors duration-300"
                         />
                       </svg>
-                    </a>
-                    <p className="m-0 font-semibold text-[20px] leading-[24px] text-[#132238]">
+                    </div>
+                    <h3 className="font-semibold text-lg md:text-[20px] leading-tight md:leading-[24px] text-[#132238] mb-3">
                       4. Launch
-                    </p>
-                    <p className="m-0 text-base leading-[24px] text-[#556070] mt-3">
+                    </h3>
+                    <p className="text-sm md:text-base leading-relaxed md:leading-[24px] text-[#556070]">
                       I deliver polished designs ready for a smooth and
                       successful launch.
                     </p>

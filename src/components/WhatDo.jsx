@@ -3,7 +3,7 @@ import React from "react";
 const WhatDo = () => {
   return (
     <>
-      <div className="min-h-screen bg-[#F0F1F3] py-[80px] md:py-[120px] px-4">
+      <div className="bg-[#F0F1F3] py-[80px] md:py-[120px] px-4">
         <div className="max-w-[1320px] mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3">
             {/* Left Section */}
