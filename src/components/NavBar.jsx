@@ -14,9 +14,13 @@ const Navbar = () => {
       <div className="max-w-[1320px] mx-auto flex justify-between items-center py-4 px-6">
         <a
           href="#"
-          className="text-black text-[32px] font-semibold flex items-center gap-[12px]"
+          className="text-black text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] font-semibold flex items-center gap-[8px] sm:gap-[10px] md:gap-[12px]"
         >
-          <img src={logo} alt="logo" />
+          <img
+            src={logo}
+            alt="logo"
+            className="w-[32px] sm:w-[36px] md:w-[40px] lg:w-[44px]"
+          />
           Nancy Mor
         </a>
         <div
