@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Navigation Menu */}
           <nav className="order-3 lg:order-2">
             <ul className="flex flex-wrap justify-center gap-4 sm:gap-6 lg:gap-[24px]">
-              {["Home", "About", "Process", "Portfolio", "Blog", "Contact"].map(
+              {["Home", "About", "Process", "Portfolio", "Contact"].map(
                 (item) => (
                   <li key={item} className="relative group">
                     <a

@@ -84,16 +84,6 @@ const Navbar = () => {
               <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#A53DFF] transition-all duration-300 group-hover:w-full"></span>
             </a>
           </li>
-          <li className="cursor-pointer group">
-            <a
-              href="#blog"
-              className="relative text-black hover:text-[#A53DFF] transition-colors duration-300 font-medium text-base "
-            >
-              Blog
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#A53DFF] transition-all duration-300 group-hover:w-full"></span>
-            </a>
-          </li>
-
           <li>
             <button
               className="relative inline-block cursor-pointer px-6 py-2 bg-[#A53DFF] text-white font-semibold 
