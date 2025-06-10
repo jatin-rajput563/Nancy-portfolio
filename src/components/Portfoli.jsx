@@ -1,5 +1,6 @@
 import React from "react";
 import sign from "../assets/images/png/sign-path.png";
+import nurolink from "../assets/images/png/nurolink.png";
 import attorny from "../assets/images/png/attorny.png";
 import grocery from "../assets/images/png/grocry.png";
 import trends from "../assets/images/png/trends.png";
@@ -26,7 +27,7 @@ const Portfolio = () => {
             <div className="flex flex-col gap-6">
               <div className="bg-white rounded-lg hover:shadow-2xl transition-all duration-300 border border-[#E6E8EB] w-full max-w-[424px] mx-auto lg:mx-0">
                 <img
-                  src={sign}
+                  src={nurolink}
                   alt="NeuroLink Homepage"
                   className="w-full h-auto rounded-t-lg"
                 />
