@@ -348,7 +348,7 @@ const Clients = () => {
                   </div>
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-2 sm:gap-3 md:gap-[18px] px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 text-xs sm:text-sm md:text-base leading-5 sm:leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF] hover:text-white mt-6 sm:mt-8 md:mt-[50px]"
+                    className="inline-flex cursor-pointer items-center gap-2 sm:gap-3 md:gap-[18px] px-3 sm:px-4 md:px-6 py-1.5 sm:py-2 md:py-3 text-xs sm:text-sm md:text-base leading-5 sm:leading-6 text-[#A53DFF] border border-[#A53DFF] rounded font-semibold shadow-[0_0_0px_#A53DFF] transition-all duration-500 ease-in-out overflow-hidden group hover:scale-105 md:hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] bg-white hover:bg-[#A53DFF] hover:text-white mt-6 sm:mt-8 md:mt-[50px]"
                   >
                     Submit
                     <svg

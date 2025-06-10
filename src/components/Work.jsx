@@ -25,7 +25,7 @@ const Work = () => {
             <div className="w-full lg:w-1/2 lg:px-3">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
                 <div className="flex flex-col gap-4 md:gap-6">
-                  <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
+                  <div className="bg-white p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
                     <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
                         width="28"
@@ -49,7 +49,7 @@ const Work = () => {
                       a strong foundation for design.
                     </p>
                   </div>
-                  <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
+                  <div className="bg-white p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
                     <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
                         width="28"
@@ -75,7 +75,7 @@ const Work = () => {
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 md:gap-6 sm:mt-6 lg:mt-6">
-                  <div className="bg-white lg:h-[284px] cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
+                  <div className="bg-white lg:h-[284px] p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
                     <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
                         width="28"
@@ -99,7 +99,7 @@ const Work = () => {
                       decisions.
                     </p>
                   </div>
-                  <div className="bg-white cursor-pointer p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
+                  <div className="bg-white p-6 md:p-8 rounded-xl hover:shadow-lg group hover:bg-white transition-all duration-300 w-full max-w-none sm:max-w-[312px] mx-auto sm:mx-0">
                     <div className="w-16 h-16 md:w-[72px] md:h-[72px] bg-[#F2E7FC] flex items-center justify-center rounded-md transition-colors duration-300 mb-4 group-hover:bg-[#A53DFF]">
                       <svg
                         width="28"

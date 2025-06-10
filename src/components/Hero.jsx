@@ -34,7 +34,7 @@ const Hero = () => {
                 </p>
                 <div className="mt-6 sm:mt-8 lg:mt-[32px]">
                   <button
-                    className="relative inline-block px-6 py-3 sm:px-8 sm:py-3 bg-[#A53DFF] text-white font-semibold 
+                    className="relative cursor-pointer inline-block px-6 py-3 sm:px-8 sm:py-3 bg-[#A53DFF] text-white font-semibold 
                     shadow-[0_0_15px_#A53DFF] transition-all duration-500 ease-in-out 
                     overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] rounded-[4px] text-sm sm:text-base"
                   >
@@ -78,7 +78,7 @@ const Hero = () => {
                     <div className="max-w-[100px] sm:max-w-[120px] p-2 sm:p-[12px] rounded-[4px] bg-white shadow-[0px_8px_32px_0px_#1C19191F] sm:shadow-[0px_12px_64px_0px_#1C19191F] flex absolute bottom-[-20px] sm:bottom-[-35px] left-1/2 lg:left-[26%] transform -translate-x-1/2 lg:translate-x-0 items-center justify-center gap-1 sm:gap-0">
                       <a
                         className="w-8 h-8 sm:w-[48px] sm:h-[48px] bg-white hover:bg-[#A53DFF] flex items-center justify-center rounded-[4px] group transition-colors duration-300 text-[#A53DFF] hover:text-white"
-                        href="2002nancymor@gmail.com"
+                        href="mailto:2002nancymor@gmail.com"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -153,7 +153,7 @@ const Hero = () => {
                     </p>
                     <div className="mt-6 sm:mt-8 lg:mt-[32px]">
                       <button
-                        className="relative inline-block px-6 py-3 sm:px-8 sm:py-3 bg-[#A53DFF] text-white font-semibold 
+                        className="relative cursor-pointer inline-block px-6 py-3 sm:px-8 sm:py-3 bg-[#A53DFF] text-white font-semibold 
                         shadow-[0_0_15px_#A53DFF] transition-all duration-500 ease-in-out 
                         overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] rounded-[4px] text-sm sm:text-base"
                       >

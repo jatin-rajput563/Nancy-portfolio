@@ -6,7 +6,6 @@ const WhatDo = () => {
       <div className="bg-[#F0F1F3] py-[80px] md:py-[120px] px-4">
         <div className="max-w-[1320px] mx-auto">
           <div className="flex flex-col md:flex-row md:-mx-3">
-            {/* Left Section */}
             <div className="w-full md:w-1/2 md:px-3">
               <div className="mt-[60px] md:mt-[142px] max-w-full md:max-w-[529px] mx-auto md:mx-0">
                 <p className="text-[32px] sm:text-[40px] md:text-[48px] font-semibold leading-tight text-[#333333]">
@@ -21,7 +20,7 @@ const WhatDo = () => {
                   simple, user-friendly solutions.
                 </p>
                 <button
-                  className="relative inline-block px-6 py-2 bg-[#A53DFF] mt-8 text-white font-semibold
+                  className="relative cursor-pointer inline-block px-6 py-2 bg-[#A53DFF] mt-8 text-white font-semibold
                     shadow-[0_0_15px_#A53DFF] transition-all duration-500 ease-in-out
                     overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] rounded-[4px]
                     mx-auto md:mx-0"
@@ -35,8 +34,6 @@ const WhatDo = () => {
                 </button>
               </div>
             </div>
-
-            {/* Right Section */}
             <div className="w-full md:w-1/2 md:px-3 mt-10 md:mt-0 flex flex-col gap-6 max-w-full md:max-w-[648px] mx-auto md:mx-0">
               {[
                 {

@@ -1,5 +1,4 @@
 import "./App.css";
-import Blog from "./components/Blog";
 import Clients from "./components/Clients";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
@@ -15,7 +14,6 @@ function App() {
       <Work />
       <Portfoli />
       <Idea />
-      <Blog />
       <WhatDo />
       <Clients />
       <Footer />

@@ -34,7 +34,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="order-2 lg:order-3">
             <p className="text-xs sm:text-sm md:text-base text-[#FFFFFF] leading-[24px] text-center lg:text-right opacity-80 hover:opacity-100 transition-opacity duration-300">
-              Copyright © 2025 NancyMor.
+              Copyright © {new Date().getFullYear()} NancyMor.
             </p>
           </div>
         </div>

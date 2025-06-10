@@ -96,7 +96,7 @@ const Navbar = () => {
 
           <li>
             <button
-              className="relative inline-block px-6 py-2 bg-[#A53DFF] text-white font-semibold 
+              className="relative inline-block cursor-pointer px-6 py-2 bg-[#A53DFF] text-white font-semibold 
   shadow-[0_0_15px_#A53DFF] transition-all duration-500 ease-in-out 
   overflow-hidden group hover:scale-110 hover:shadow-[0_0_25px_#A53DFF] rounded-[4px]"
             >
